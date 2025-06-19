@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    background: url("img/fondo-primera-parte.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vh 1rem;
+    min-height: 100vh;
+}
+
+
+
+.cajaInicio {
+    background-color: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.cajaInicio h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: 700;
+}
+.inputGrupo {
+    margin-bottom: 1rem;
+}
+.inputGrupo label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #555;
+    font-weight: 500;
+}
+.inputGrupo input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.inputGrupo input:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+    color: #555;
+    align-items: center;
+}
+.opciones a {
+    text-decoration: none;
+    color: #4a90e2;
+    transition: color 0.3s;
+}
+.opciones a:hover {
+    color: #357abd;
+}
+.opciones input[type="checkbox"] {
+    margin-right: 0.4rem;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.loginBtn {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.loginBtn:hover {
+    background-color: #357abd;
+}
+.registrarse {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+.registrarse a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.registrarse a:hover {
+    color: #357abd;
+}
+.volverInicio {
+  margin-top: 1rem;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 0.75rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.volverInicio:hover {
+  background-color: #d5d5d5;
+}
+
+@media (max-width: 1366px) {
+    .img2 {
+        margin: 10px 80px 5px 15px;
+        width: 200px;
+    }
+    .abrirMenu {
+        margin-left: 80px;
+    }
+    .eslogan {
+        font-size: 50px;
+    }
+    .titulo {
+        padding: 40px 150px;
+        font-size: 50px;
+    }
+    .precio, .precio2 {
+        width: 350px;
+        height: 350px;
+        margin: 80px 150px;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .img1, .img2 {
+        margin: 10px auto;
+    }
+    .img2 {
+        width: 160px;
+    }
+    .abrirMenu {
+        margin: 20px auto;
+    }
+    .primerParte {
+        padding: 40px 30px;
+        text-align: center;
+    }
+    .eslogan {
+        font-size: 40px;
+    }
+    .texto1 {
+        font-size: 16px;
+        padding: 20px;
+    }
+    .videoHistoria {
+        flex-direction: column;
+        align-items: center;
+    }
+    video {
+        width: 100%;
+        max-width: 500px;
+    }
+    .historia {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .titulo {
+        font-size: 40px;
+        padding: 30px 50px;
+    }
+    .precio, .precio2 {
+        width: 300px;
+        height: 300px;
+        margin: 50px auto;
+    }
+}
+
+
+@media (max-width: 767px) {
+    body {
+        align-items: flex-start;
+        padding-top: 5vh;
+    }
+
+    .img1, .img2 {
+        width: 100px;
+        height: 50px;
+        margin: 10px auto;
+    }
+    .abrirMenu {
+        font-size: 2rem;
+        margin: 10px auto;
+    }
+    .navList li a {
+        font-size: 20px;
+        margin: 15px;
+    }
+    .primerParte {
+        padding: 20px;
+        text-align: center;
+    }
+    .eslogan {
+        font-size: 28px;
+    }
+    .texto1 {
+        font-size: 14px;
+        padding: 12px;
+    }
+    video {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .historia h2 {
+        font-size: 22px;
+        padding: 15px;
+    }
+    .historia p {
+        font-size: 14px;
+        padding: 15px;
+    }
+    .titulo {
+        font-size: 24px;
+        padding: 20px;
+    }
+    .caja, .caja2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .precio, .precio2 {
+        width: 250px;
+        height: 250px;
+        margin: 15px auto;
+    }
+    .pie {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .contacto span {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    .derechos {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .abrirMenu {
+        font-size: 1.8rem;
+        width: 25px;
+        height: 25px;
+    }
+    .titulo {
+        font-size: 20px;
+        padding: 15px 10px;
+    }
+    .precio, .precio2 {
+        width: 200px;
+        height: 200px;
+    }
+    .eslogan {
+        font-size: 24px;
+    }
+}

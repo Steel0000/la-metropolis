@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+.noScroll{
+    overflow: hidden;
+    height: 100vh;
+}
+
+.img1{
+    width: 100px;
+    margin: 10px 10px 5px 20px;
+    height: 90px;
+}
+
+.img2{
+    width: 230px;
+    margin: 10px 15px 5px 10px;
+    height: 90px;
+}
+
+.img3 {
+    width: 100px;
+    margin: 10px 0px 5px 20px;
+}
+
+.navList {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: end;
+}
+
+.navList li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 27px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    margin: 30px 30px 0px 5px;
+}
+
+
+.abrirMenu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 45px;
+    margin-left: 50px;
+    color: black;
+    border: 0;
+    background-color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.nav {
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
+    height: 101%;
+}
+
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cerrarMenu {
+    display: block;
+    border: 0;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.contenedorLogos{
+    display: flex;
+}
+
+.logos{
+    width: 70px; 
+}
+
+.sesion {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.primerParte {
+    padding: 80px;
+    background: url(img/fondo-primera-parte.jpg) 90%;
+    height: 90%;
+}
+
+.textoPrincipal {
+    display: block;
+}
+
+.eslogan {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    color: white;
+}
+
+.texto1 {
+    display: block;
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 30px;
+    padding-left: 0px;
+    text-align: start;
+}
+
+.vid {
+    padding: 60px;
+}
+
+video {
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 30px;
+}
+
+.videoHistoria {
+    display: flex;
+}
+
+.historia {
+    padding-top: 140px;
+}
+
+.historia h2 {
+    padding-bottom: 40px;
+    padding-left: 100px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.historia p {
+    padding: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.pie {
+    background-color: black;
+    height: 180px;
+    display: flex;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 110px;
+}
+
+.contacto span {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.contacto span a {
+    color: white;
+    text-decoration: none;
+}
+
+.derechos {
+    color: white;
+    font-size: 20px;
+    padding-top: 60px;
+}
+
+.titulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px 200px;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    background: url(img/fondo-primera-parte.jpg);
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    background: url(img/fondo-primera-parte.jpg);
+}
+
+.indicaciones {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+    background: black;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.menu {
+    background: url(img/fondo-primera-parte.jpg);
+}
+
+.caja {
+    display: flex;
+}
+
+.caja img {
+    width: 300px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+}
+
+.caja h2 {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    margin-top: 140px;
+}
+
+.caja span {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.precio {
+    background-color: white;
+    height: 380px;
+    width: 380px;
+    margin: 100px 200px;
+    justify-items: center;
+    text-align: center;
+    border-radius: 200px;
+}
+
+.caja2 {
+    display: flex;
+}
+
+.caja2 img {
+    width: 300px;
+    margin-bottom: 200px;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+}
+
+.caja2 h2 {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    margin-top: 140px;
+}
+
+.caja2 span {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.precio2 {
+    background-color: white;
+    height: 380px;
+    width: 380px;
+    margin: 100px 180px;
+    justify-items: center;
+    text-align: center;
+    border-radius: 200px;
+}
+
+.esconder {
+    display: none;
+}
+
+.precio span, .precio2 span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.btnAgregarCarrito {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnAgregarCarrito:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+} 
+
+@media (max-width: 1366px) {
+    .img2 {
+        margin: 10px 80px 5px 15px;
+        width: 200px;
+    }
+    .abrirMenu {
+        margin-left: 80px;
+    }
+    .eslogan {
+        font-size: 50px;
+    }
+    .titulo {
+        padding: 40px 150px;
+        font-size: 50px;
+    }
+    .precio, .precio2 {
+        width: 350px;
+        height: 350px;
+        margin: 80px 150px;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .img1, .img2 {
+        margin: 10px auto;
+    }
+    .img2 {
+        width: 160px;
+    }
+    .abrirMenu {
+        margin: 20px auto;
+    }
+    .primerParte {
+        padding: 40px 30px;
+        text-align: center;
+    }
+    .eslogan {
+        font-size: 40px;
+    }
+    .texto1 {
+        font-size: 16px;
+        padding: 20px;
+    }
+    .videoHistoria {
+        flex-direction: column;
+        align-items: center;
+    }
+    video {
+        width: 100%;
+        max-width: 500px;
+    }
+    .historia {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .titulo {
+        font-size: 40px;
+        padding: 30px 50px;
+    }
+    .precio, .precio2 {
+        width: 300px;
+        height: 300px;
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .img1, .img2 {
+        width: 100px;
+        height: 50px;
+        margin: 10px auto;
+    }
+    .abrirMenu {
+        font-size: 2rem;
+        margin: 10px auto;
+    }
+    .navList li a {
+        font-size: 20px;
+        margin: 15px;
+    }
+    .primerParte {
+        padding: 20px;
+        text-align: center;
+    }
+    .eslogan {
+        font-size: 28px;
+    }
+    .texto1 {
+        font-size: 14px;
+        padding: 12px;
+    }
+    video {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .historia h2 {
+        font-size: 22px;
+        padding: 15px;
+    }
+    .historia p {
+        font-size: 14px;
+        padding: 15px;
+    }
+    .titulo {
+        font-size: 24px;
+        padding: 20px;
+    }
+    .caja, .caja2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .precio, .precio2 {
+        width: 250px;
+        height: 250px;
+        margin: 15px auto;
+    }
+    .pie {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .contacto span {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    .derechos {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .abrirMenu {
+        font-size: 1.8rem;
+        width: 25px;
+        height: 25px;
+    }
+    .titulo {
+        font-size: 20px;
+        padding: 15px 10px;
+    }
+    .precio, .precio2 {
+        width: 200px;
+        height: 200px;
+    }
+    .eslogan {
+        font-size: 24px;
+    }
+}

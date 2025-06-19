@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito De Compras</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="carrito.css">
+    <link rel="icon" href="img/logo.jpeg">
+</head>
+    <body>
+        <header>
+            <a href="index.html"><img src="img/logosinfondo.png" alt=">Logo" class="img1"></a>
+
+            <a href="index.html"><img src="img/logo2sinfondo.png" alt="Logo3" class="img2"></a>
+
+            <a href="formulario.html" style="margin: 18px 0px 10px 1000px;"><img src="img/sesion.png" alt="sesion" class="sesion"></a>
+
+            <button id="abrir" class="abrirMenu"><i class="bi bi-list"></i></button>
+
+            <nav class="nav" id="nav">
+                <button id="cerrar" class="cerrarMenu"><i class="bi bi-x"></i></button>
+                <ul class="navList">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="ubicacion.html">¿Donde estamos?</a></li>
+                    <div class="contenedorLogos">
+                        <a href="https://www.instagram.com/metropolishamburguesas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="  target="_blank"><img src="img/logoInstagram2.png" alt="instagram" class="logos" style="margin: 650px 27px 0px 27px;"></a>
+                    
+                        <a href="https://wa.me/573054519174" target="_blank"><img src="img/logoWhatsapp2.png" alt="whatsapp" class="logos" style="margin: 650px 27px 0px 27px;"></a>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+
+        <section>
+            <div id="carrito" class="carrito-container">
+                <h2>Carrito de Compras</h2>
+                <table class="carrito-tabla">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="carrito-items">
+                        <!-- Se llena con JS -->
+                    </tbody>
+                </table>
+                <div class="carrito-total">
+                    <strong>Total a pagar: </strong><span id="total-carrito">$0</span>
+                </div>
+                <button class="btn-pagar">Finalizar Compra</button>
+                <button class="btn-vaciar">Vaciar carrito</button>
+            </div>
+        </section>
+
+            <footer class="pie">
+            <div class="contacto">
+                <span><a href="#">Carrera 68B #76a-1</a></span>
+                <span><a href="#">+57 305 4519174</a></span>
+                <span><a href="#">hamburguesaslametropolis@gmail.com</a></span>
+            </div>
+            <div>
+                <p class="derechos"> &copy; Daniel Acero, Juan Quiroz, Todos Los Derechos Reservados</p>
+            </div>
+            <img src="img/logosinfondo.png" alt="" style="padding-right: 20px; margin-left: 400px; padding-top: 10px;">
+        </footer>
+        <script src="carrito.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
